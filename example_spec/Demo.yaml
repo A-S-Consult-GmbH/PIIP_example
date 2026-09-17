@@ -1,0 +1,22 @@
+﻿- Ontology:
+    Name: Demo
+    Doc: >-
+      Closed example domain ontology. Demonstrates additive extension of the
+      public PIIP Core types without modifying public YAML.
+    Meta:
+        Uri: https://example.org/piip-example/Demo/1
+        Organization: Example
+        OrganizationUri: https://example.org/
+        Version: 1.0.0
+        Creators: [ Example Author ]
+    LinkedOntologies:
+        - Core:
+            Uri: https://w3id.org/piip/Core/1
+    Components:
+        - DemoMarkerComponent:
+            Doc: Marker packet identifying an example demonstration entity.
+    Archetypes:
+        - DemoArchetype:
+            Doc: Named example entity.
+            Includes: [ NamedArchetype ]
+            Components: [ DemoMarkerComponent ]

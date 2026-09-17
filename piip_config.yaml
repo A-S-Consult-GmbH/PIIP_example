@@ -1,0 +1,10 @@
+schema: piip-config/1
+entry:
+  - example_spec/
+outputs:
+  docs: gen/doc
+  codegen:
+    - adapter: cpp-std
+      out: gen/code/cpp-std
+requires:
+  piip: ">=0.1.1"

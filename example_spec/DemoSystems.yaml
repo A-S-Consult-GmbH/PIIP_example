@@ -1,0 +1,38 @@
+﻿- Ontology:
+    Name: DemoSystems
+    Doc: >-
+      Example system contract over Demo entities. The implementation lives in
+      the consumer runtime, not in this YAML.
+    Meta:
+        Uri: https://example.org/piip-example/DemoSystems/1
+        Organization: Example
+        OrganizationUri: https://example.org/
+        Version: 1.0.0
+        Creators: [ Example Author ]
+    LinkedOntologies:
+        - Core:
+            Uri: https://w3id.org/piip/Core/1
+        - Demo:
+            Uri: https://example.org/piip-example/Demo/1
+            Prefix: demo
+    ValueTypes:
+        - DemoLabelResult:
+            Doc: Result of ReadLabel.
+            Members:
+                - Member:
+                    Name: label
+                    Type: String
+                    Doc: Human-readable name of the demo entity.
+    Systems:
+        - DemoLabelSystem:
+            Doc: Reads the display name of a Demo entity.
+            Operations:
+                - ReadLabel:
+                    Doc: Return the name of the given demo entity.
+                    Input:
+                        - Member:
+                            Name: entity
+                            Type: Link<demo:DemoArchetype>
+                            Doc: Demo entity to read.
+                    Output:
+                        - DemoLabelResult result
