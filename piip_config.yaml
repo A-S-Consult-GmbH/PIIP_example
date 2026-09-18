@@ -7,4 +7,4 @@ outputs:
     - adapter: cpp-std
       out: gen/code/cpp-std
 requires:
-  piip: ">=0.1.1"
+  piip: ">=0.1.3"

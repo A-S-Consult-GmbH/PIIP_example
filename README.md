@@ -16,7 +16,7 @@ python run.py
 Until PyPI, `pip install -e .` uses the git tag pin, or install a sibling clone:
 
 ```text
-pip install git+https://github.com/A-S-Consult-GmbH/PIIP_tooling.git@v0.1.0
+pip install git+https://github.com/A-S-Consult-GmbH/PIIP_tooling.git@v0.1.3
 python -m piip validate --config piip_config.yaml
 python -m piip docs --config piip_config.yaml
 python -m piip generate --config piip_config.yaml

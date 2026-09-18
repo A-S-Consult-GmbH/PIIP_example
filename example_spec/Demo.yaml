@@ -14,8 +14,9 @@
             Uri: https://w3id.org/piip/Core/1
     ValueTypes:
         - ExampleData:
-            - LengthValue data1
-            - String data2
+            Members:
+                - LengthValue data1
+                - String data2
     Components:
         - DemoMarkerComponent:
             Doc: Marker packet identifying an example demonstration entity.
