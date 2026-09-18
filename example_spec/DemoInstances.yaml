@@ -1,0 +1,14 @@
+﻿- InstanceSet:
+    Name: DemoInstanceSet
+    LinkedOntologies:
+        - Core:
+            Uri: https://w3id.org/piip/Core/1
+        - Demo:
+            Uri: https://example.org/piip-example/Demo/1
+            Prefix: demo
+    Entities:
+        - Id: d09788f0-de12-4734-bdf6-f81fef8b15ce
+          Components:
+            NameComponent: { name: "Demo entity" }
+            demo:DemoMarkerComponent: {}
+            demo:DemoDataComponent: { data1: 42.0, data2: "the answer" }

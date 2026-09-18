@@ -35,7 +35,7 @@ Relative paths in `piip_config.yaml` are resolved against that file's directory.
 
 ```text
 piip_config.yaml          # entries, outputs
-example_spec/             # closed Domain + System
+example_spec/             # closed Domain + System + InstanceSet
 gen/                      # derived (gitignored)
 run.py
 ```
